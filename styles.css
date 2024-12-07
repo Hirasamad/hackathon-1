@@ -1,0 +1,280 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  .header {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 20px;
+  }
+  
+  .header .logo {
+    font-size: 24px;
+    color: #000;
+  }
+  
+  .search {
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+    border-radius: 4px;
+    width: 200px;
+  }
+  
+  .login-btn {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 40px 20px;
+    background: #f8f9fa;
+  }
+  
+  .hero h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    color: #555;
+  }
+  
+  /* Main Content */
+  .main-content {
+    display: flex;
+    padding: 20px;
+  }
+  
+  .sidebar {
+    flex: 1;
+    padding-right: 20px;
+    border-right: 1px solid #ddd;
+  }
+  
+  .sidebar h3 {
+    margin-bottom: 15px;
+    color: #000;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .blog-posts {
+    flex: 3;
+    padding-left: 20px;
+  }
+  
+  .blog-posts h3 {
+    margin-bottom: 20px;
+    color: #000;
+  }
+  
+  .post {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+  }
+  
+  .post .date {
+    color: #888;
+    font-size: 14px;
+  }
+  
+  .post h4 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #007bff;
+  }
+  
+  .post p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+  }
+  
+  footer .newsletter input {
+    padding: 10px;
+    width: 200px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  footer .newsletter button {
+    padding: 10px 20px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  footer p {
+    margin-top: 10px;
+    color: #555;
+    font-size: 12px;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    margin: 0;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    background-color: #0056b3;
+    border-radius: 4px;
+  }
+  
+  /* Highlight Blog Link */
+  .nav-links a.blog-link {
+    font-weight: bold;
+    color: #ffdd57;
+    background-color: #0056b3;
+    border-radius: 4px;
+    padding: 8px 12px;
+  }
+  
+  .nav-links a.blog-link:hover {
+    background-color: #ffdd57;
+    color: #0056b3;
+  }
+  
+  /* Search Bar */
+  .search-bar {
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-left: 10px;
+  }
+  
+  /* Get Started Button */
+  .get-started {
+    position: relative;
+  }
+  
+  .get-started-btn {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .get-started-btn:hover {
+    background-color: #218838;
+  }
+  
+  /* Dropdown (Corrected) */
+  .get-started:hover .dropdown {
+    display: block;
+  }
+  
+  .dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    z-index: 10;
+  }
+  
+  .dropdown a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      display: none;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .navbar {
+      flex-wrap: wrap;
+    }
+  
+    .get-started {
+      margin-top: 10px;
+    }
+  }
+  
+
